@@ -1,27 +1,93 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-</head>
-<body bgcolor="black" text="white">
-<h1> this is my friend list </h1>
-<h2> my lnk </h2>
-<a href="aboutme.html">Go to About Me Page</a>
-<form>
-<br> <br>
-<input type="radio" name="gender"> male
-<br> <br>
-<hr>
-<input type="female">
-<input type="date" name="dob">
-<br>
+    <title>Friend List</title>
 
-<hr>
-<textarea rows="4" cols="30"></textarea>
-<celect>
-<option>mother</option>
-</celect>
-<hr>
-<hr>
-<input type="submit" value="submit">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 22px;        /* 👈 increased font size */
+            line-height: 1.8;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        a {
+            color: #00ffff;
+            font-size: 22px;
+        }
+
+        input, textarea, select, button {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is my friend list</h1>
+
+    <h2>My link</h2>
+    <a href="aboutme.html">Go to About Me Page</a>
+
+    <form>
+        <br><br>
+
+        <label>
+            <input type="radio" name="gender"> Male
+        </label>
+
+        <br><br>
+        <hr>
+
+        <label>
+            <input type="radio" name="gender"> Female
+        </label>
+
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob">
+
+        <br><br>
+        <hr>
+
+        <label>Message:</label><br>
+        <textarea></textarea>
+
+        <br><br>
+
+        <label>Relation:</label><br>
+        <select>
+            <option>Mother</option>
+            <option>Father</option>
+            <option>Friend</option>
+        </select>
+
+        <br><br>
+        <hr>
+
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
