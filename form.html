@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Squad Team Registration</title>
+
+    <!-- JavaScript ONLY for Show Password -->
+    <script>
+        function showPassword() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</head>
+<body bgcolor="black" text="white">
+
+<h1>Squad Team Registration</h1>
+
+<form action="thankyou.html" method="get">
+
+Name:<br>
+<input type="text" name="name" required>
+<br><br>
+
+Phone Number:<br>
+<input type="tel" name="phone">
+<br><br>
+
+Email:<br>
+<input type="email" name="email">
+<br><br>
+
+Password:<br>
+<input type="password" id="password" name="password">
+<br><br>
+
+<input type="button" value="Show Password" onclick="showPassword()">
+<br><br>
+
+Gender:<br>
+<input type="checkbox" name="gender" value="Male"> Male
+<input type="checkbox" name="gender" value="Female"> Female
+<input type="checkbox" name="gender" value="Other"> Other
+<br><br>
+
+Squad Role:<br>
+<select name="role" required>
+    <option value="">--Select Role--</option>
+    <option value="Leader">Leader</option>
+    <option value="Member">Member</option>
+</select>
+<br><br>
+
+About You:<br>
+<textarea rows="4" cols="30"></textarea>
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+<br>
+<a href="index.html">Home</a> |
+<a href="aboutme.html">About</a>
+
+</body>
+</html>

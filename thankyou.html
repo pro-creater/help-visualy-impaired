@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+
+    <script>
+        function showMessage() {
+            const params = new URLSearchParams(window.location.search);
+            const role = params.get("role");
+
+            let message = "";
+
+            if (role === "Leader") {
+                message = "Success! You were considered as Leader.";
+            } else if (role === "Member") {
+                message = "Success! You have been registered as a Member of this community.";
+            } else {
+                message = "Thank you for registering with our squad team.";
+            }
+
+            document.getElementById("result").innerText = message;
+        }
+    </script>
+
+</head>
+<body bgcolor="black" text="white" onload="showMessage()">
+
+<h1>Thank You</h1>
+
+<p id="result"></p>
+
+<br>
+<a href="index.html">Go to Home</a> |
+<a href="form.html">Back to Form</a>
+
+</body>
+</html>
